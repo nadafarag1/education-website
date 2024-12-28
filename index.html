@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Responsive Multipage Education Website Usung HTML, css & JavaSCript</title>
+	<title>Responsive Multipage Education Website Using HTML, css & JavaScript</title>
 
 	<!-- ICONSCOUT -->
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
@@ -12,6 +12,13 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+		<!--Swiper JS -->
+		<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 
 	<link rel="stylesheet" href="./css/style.css">
 </head>
@@ -338,7 +345,140 @@
 		</div>
 	</section>
 
-  <!-- END OF FAQs -->
+										<!-- END OF FAQs -->
+
+
+
+
+
+
+
+
+
+		<section class="container testimonials__container mySwiper">
+				<h2>Students' Testimonials</h2>
+				<div class="swiper-wrapper">
+
+
+					<article class="testimonial swiper-slide">
+						<div class="avatar">
+							<img src="./images/avatar1.jpg" alt="">
+						</div>
+						<div class="testimonial__info">
+							<h5>Diana Ayi</h5>
+							<small>Student</small>
+						</div>
+						<div class="testimonial__body">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut expedita ducimus similique hic sit pariatur. In officiis est debitis officia repellat praesentium saepe, optio harum autem similique, aliquam quidem voluptatum.
+							</p>
+
+						</div>
+
+					</article>
+
+
+
+
+
+
+
+
+					<article class="testimonial swiper-slide">
+						<div class="avatar">
+							<img src="./images/avatar2.jpg" alt="">
+						</div>
+						<div class="testimonial__info">
+							<h5>Ernest Achi</h5>
+							<small>Web Developer</small>
+						</div>
+						<div class="testimonial__body">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut expedita ducimus similique hic sit pariatur. In officiis est debitis officia repellat praesentium saepe, optio harum autem similique, aliquam quidem voluptatum.
+							</p>
+
+						</div>
+
+					</article>
+
+
+
+
+
+
+
+
+					<article class="testimonial swiper-slide">
+						<div class="avatar">
+							<img src="./images/avatar3.jpg" alt="">
+						</div>
+						<div class="testimonial__info">
+							<h5>Edem Quist</h5>
+							<small>Student</small>
+						</div>
+						<div class="testimonial__body">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut expedita ducimus similique hic sit pariatur. In officiis est debitis officia repellat praesentium saepe, optio harum autem similique, aliquam quidem voluptatum.
+							</p>
+
+						</div>
+
+					</article>
+
+
+
+
+
+
+
+
+					<article class="testimonial swiper-slide">
+						<div class="avatar">
+							<img src="./images/avatar4.jpg" alt="">
+						</div>
+						<div class="testimonial__info">
+							<h5>Hajia Bintu</h5>
+							<small>Student</small>
+						</div>
+						<div class="testimonial__body">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut expedita ducimus similique hic sit pariatur. In officiis est debitis officia repellat praesentium saepe, optio harum autem similique, aliquam quidem voluptatum.
+							</p>
+
+						</div>
+
+					</article>
+
+
+
+
+
+
+					<article class="testimonial swiper-slide">
+						<div class="avatar">
+							<img src="./images/avatar5.jpg" alt="">
+						</div>
+						<div class="testimonial__info">
+							<h5>Diana Ayi</h5>
+							<small>Student</small>
+						</div>
+						<div class="testimonial__body">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut expedita ducimus similique hic sit pariatur. In officiis est debitis officia repellat praesentium saepe, optio harum autem similique, aliquam quidem voluptatum.
+							</p>
+
+						</div>
+
+					</article>
+
+
+
+
+				</div>
+				<div class="swiper-pagination"></div>
+
+
+		</section>
 
 
 
@@ -349,8 +489,37 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 		<script src="./main.js"></script>
+
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: 1,
+				spaceBetween: 30,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				//when windos is >= 600px
+				breakpoints: {
+					600: {
+						slidesPerView: 2,
+					}
+				}
+			});
+		</script>
 
 	
 
