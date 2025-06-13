@@ -96,11 +96,11 @@ img {
   color: var(--color-white);
   border-color: var(--color-white);
 } 
-
 .btn-primary {
   background: var(--color-danger);
-  color: var(-color-white);
+  color: var(--color-white); /* ✅ Correct: with double hyphens */
 }
+
 
 /*=================== NAVBAR ===================*/
 nav {
@@ -583,6 +583,13 @@ z-index: 1;
     color: var(--color-white);
     cursor: pointer;
   }
+
+
+  .btn-primary {
+    background: var(--color-danger);
+    color: var(--color-white); /* ✅ Correct: with double hyphens */
+  }
+  
 
   #open-menu-btn {
     display: inline-block;
