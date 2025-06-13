@@ -97,8 +97,13 @@ img {
   border-color: var(--color-white);
 } 
 .btn-primary {
-  background:red;
-  color: var(--color-white); /* ✅ Correct: with double hyphens */
+  background: #f75842;
+  color: #ffffff !important;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  text-align: center;
+  font-weight: 600;
 }
 
 
@@ -586,9 +591,15 @@ z-index: 1;
 
 
   .btn-primary {
-    background: var(--color-danger);
-    color: var(--color-white); /* ✅ Correct: with double hyphens */
+    background: #f75842;
+    color: #ffffff !important;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    text-align: center;
+    font-weight: 600;
   }
+  
   
 
   #open-menu-btn {
