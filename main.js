@@ -23,20 +23,21 @@ faqs.forEach(faq => {
 
 
 // ==================== Show/hide nav menu (mobile) ====================
-const menu = document.querySelector(".nav__menu")
-const openBtn = document.querySelector("#open-menu-btn")
-const closeBtn = document.querySelector("#close-menu-btn")
+const menu = document.querySelector('.nav__menu')
+const openBtn = document.querySelector('#open-menu-btn')
+const closeBtn = document.querySelector('#close-menu-btn')
 
-// Open menu
+// Show menu
 openBtn.addEventListener('click', () => {
-  menu.classList.add('show') // Use .show class (controlled via CSS)
-  openBtn.style.display = "none"
-  closeBtn.style.display = "inline-block"
+  menu.classList.add('show')
+  openBtn.style.display = 'none'
+  closeBtn.style.display = 'inline-block'
 })
 
-// Close menu
+// Hide menu
 closeBtn.addEventListener('click', () => {
   menu.classList.remove('show')
-  closeBtn.style.display = "none"
-  openBtn.style.display = "inline-block"
+  closeBtn.style.display = 'none'
+  openBtn.style.display = 'inline-block'
 })
+

@@ -590,12 +590,20 @@ z-index: 1;
     cursor: pointer;
   }
   .btn-primary {
-    background: var(--color-danger) !important;
-    color: var(--color-white) !important;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
+    color: #fff !important;
+    background-color: #f75842 !important;
+    font-size: 1.2rem !important;
+    z-index: 1000 !important;
+    display: inline-block !important;
+    position: relative;
+  }
+  nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    cursor: pointer;
+    border: none;
   }
   
   
@@ -603,7 +611,7 @@ z-index: 1;
   
   nav button#open-menu-btn {
     display: inline-block;
-  }  
+  }
   
   
 
@@ -635,15 +643,12 @@ z-index: 1;
     width: 100%;
     height: 5.8rem;
   }
-
   .nav__menu li a {
-    background: var(--color-primary);
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-items: center;
+    background: #bab8e0;
+    color: #fff;
+    font-size: 1.1rem;
   }
-
+  
   .nav__menu li a:hover {
     background: var(--color-bg2);
     color: var(--color-white);
