@@ -585,14 +585,14 @@ z-index: 1;
     display: inline-block;
     background: transparent;
     font-size: 1.8rem;
-    color: var(--color-white);
+    color: red;
     cursor: pointer;
   }
 
 
   .btn-primary {
     background: var(--color-danger) !important;
-    color: var(--color-white) !important;
+    color: var(--color-danger)
     padding: 1rem 2rem;
     font-size: 1rem;
     font-weight: 600;
