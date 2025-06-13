@@ -97,7 +97,7 @@ img {
   border-color: var(--color-white);
 } 
 .btn-primary {
-  background: red;
+  background:red;
   color: var(--color-white); /* ✅ Correct: with double hyphens */
 }
 
