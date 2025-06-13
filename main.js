@@ -1,50 +1,42 @@
-//cahnge navbar styles on scroll
+// ==================== Change navbar style on scroll ====================
 window.addEventListener('scroll', () => {
   document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0)
 })
 
 
-
-
-// show/hide faq answer
-
-const faqs = document.querySelectorAll('.faq');
+// ==================== FAQ Toggle Logic ====================
+const faqs = document.querySelectorAll('.faq')
 
 faqs.forEach(faq => {
-    faq.addEventListener('click', () => {
-        faq.classList.toggle('open');
-      //change icon
-      const icon =faq.querySelector('.faq__icon i');
-      if(icon.className === 'uil uil-plus') {
-        icon.className = "uil uil-minus"; 
-      } else { 
-        icon.className = "uil uil-plus";
-      }
+  faq.addEventListener('click', () => {
+    faq.classList.toggle('open')
 
-      });
-    });
-
-
-
-
-    // show/hide nav menu
-    const menu = document.querySelector(".nav__menu");
-    const menuBtn = document.querySelector("#open-menu-btn");
-    const closeBtn = document.querySelector("#close-menu-btn");
-
-
-    menuBtn.addEventListener('click', () => {
-      menu.style.display = "flex"
-      closeBtn.style.display = "inline-block";
-      menuBtn.style.display = "none";
-    } );
-
-
-    //clse nav menu
-    const closeNav = () => {
-      menu.style.display = "none";
-      closeBtn.style.display = "none";
-      menuBtn.style.display = "inline-block";
+    // Toggle plus/minus icon
+    const icon = faq.querySelector('.faq__icon i')
+    if (icon.className === 'uil uil-plus') {
+      icon.className = 'uil uil-minus'
+    } else {
+      icon.className = 'uil uil-plus'
     }
+  })
+})
 
-    closeBtn.addEventListener('click', closeNav);
+
+// ==================== Show/hide nav menu (mobile) ====================
+const menu = document.querySelector(".nav__menu")
+const openBtn = document.querySelector("#open-menu-btn")
+const closeBtn = document.querySelector("#close-menu-btn")
+
+// Open menu
+openBtn.addEventListener('click', () => {
+  menu.classList.add('show') // Use .show class (controlled via CSS)
+  openBtn.style.display = "none"
+  closeBtn.style.display = "inline-block"
+})
+
+// Close menu
+closeBtn.addEventListener('click', () => {
+  menu.classList.remove('show')
+  closeBtn.style.display = "none"
+  openBtn.style.display = "inline-block"
+})
