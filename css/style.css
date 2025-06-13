@@ -97,14 +97,15 @@ img {
   border-color: var(--color-white);
 } 
 .btn-primary {
-  background: #f75842;
-  color: #ffffff !important;
-  font-size: 1rem;
+  background: var(--color-danger) !important;
+  color: var(--color-white) !important;
   padding: 1rem 2rem;
-  border: none;
-  text-align: center;
+  font-size: 1rem;
   font-weight: 600;
+  text-align: center;
 }
+
+
 
 
 /*=================== NAVBAR ===================*/
@@ -588,16 +589,18 @@ z-index: 1;
     color: red;
     cursor: pointer;
   }
-
-
   .btn-primary {
     background: var(--color-danger) !important;
-    color: var(--color-danger)
+    color: var(--color-white) !important;
     padding: 1rem 2rem;
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
   }
+  
+  
+  
+  
   nav button#open-menu-btn {
     display: inline-block;
   }  
